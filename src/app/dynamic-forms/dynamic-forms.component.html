@@ -1,0 +1,17 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <!-- FormArray for favorite books -->
+    <div formArrayName="favoriteBooks">
+      <h3>Favoritos Books</h3>
+      <button type="button" (click)="addBook()">Agregar</button>
+      <div *ngFor="let book of favoriteBooks.controls; let i=index">
+        <label>
+          Libro {{ i + 1 }}:
+          <input type="text" [formControlName]="i">
+        </label>
+        <button (click)="removeBook(i)">Eliminar</button>
+      </div>
+    </div>
+  
+    <button type="submit">Enviar</button>
+  </form>
+  

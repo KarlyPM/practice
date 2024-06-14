@@ -1,0 +1,9 @@
+Interpolación:
+Forma de mostrar dinámicamente datos en tu aplicación. {{}} puedes mostrarlo en tu plantilla html usando {{nombre}}
+
+Property binding:
+Es una forma de enlazar datos desde el componente de Angular a la plantilla HTML
+Puedes tener una propiedad llamada `nombre` en tu componente.
+utiliza la sintaxis de <input type="text" [value]="person.name">
+
+Date binding
